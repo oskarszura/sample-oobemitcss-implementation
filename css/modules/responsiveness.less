@@ -1,0 +1,9 @@
+@desktop: 1024px;
+@tablet: 800px;
+@handheald: 320px;
+
+.respond-to(@max-width; @rules) {
+  @media only screen and (max-width: @max-width) {
+    @rules();
+  }
+}

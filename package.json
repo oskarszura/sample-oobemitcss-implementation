@@ -1,0 +1,22 @@
+{
+  "name": "OOBEMITCSS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.ldn.swissbank.com/szurao/OOBEMITCSS.git"
+  },
+  "dependencies": {
+    "bootstrap": "3.3.5"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-less": "^1.0.1"
+  },
+  "author": "Oskar Szura",
+  "license": "ISC"
+}

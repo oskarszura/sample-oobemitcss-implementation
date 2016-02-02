@@ -1,0 +1,49 @@
+// ITCSS - all specificity are ordered ascending (or flat)
+
+.main-navigation {
+  // BEM - block
+  // Extension of generic classes, makes markups lighter
+  .row();
+  .navbar();
+  .navbar-default();
+
+  &--responsive-handhelds {
+    .respond-to(@tablet, {
+      .main-navigation__position {
+        float: none;
+        text-align: center;
+      }
+    });
+  }
+
+  &--blue {
+    // BEM - block's modifier
+    // OOCSS - keep skin separated from object
+    background-color: @color-dew;
+  }
+
+  &__menu {
+    // BEM - element
+    // Extension of generic classes, makes markups lighter
+    .nav();
+    .navbar-nav();
+  }
+
+  &__position {
+    // BEM - element
+    float: left;
+    padding: 14px 15px;
+
+    &--odd {
+      // BEM - element's modifier
+      // OOCSS - keep skin separated from object
+      background-color: @color-suva-gray;
+
+      a {
+        // ITCSS - the highest specificity at the very end
+        // 'a' is to increase specificity
+        color: @color-white;
+      }
+    }
+  }
+}
